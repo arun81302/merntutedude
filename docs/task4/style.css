@@ -1,0 +1,28 @@
+*,img,button{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 0 25%;
+    width: 50%;
+    margin-top: 10vh;
+}
+img{
+    width: 100%;
+    display: block;
+}
+button{
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(to right,red,yellow);
+    border: none;
+
+}
+button:hover{
+    cursor: pointer;
+}
