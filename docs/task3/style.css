@@ -1,0 +1,23 @@
+body{
+    background-color: silver;
+}
+.head{
+    color: blue;
+}
+#bglime{
+    background-color: lime;
+    color: red;
+}
+p{
+    color: white;
+}
+#para{
+    color: green;
+    font-size: 20px;
+}
+li:nth-child(1) span{
+    background-color: aquamarine;
+}
+li:nth-child(2) span{
+    background-color: gold;
+}
