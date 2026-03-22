@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: poppins, sans-serif;
 }
 :root{
     --primary-color: #489fdc;
@@ -39,10 +39,12 @@ li:hover{
 }
 .left{
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .left>h1{
-    height: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 .mid{
     width: 80%;
@@ -157,22 +159,23 @@ button:hover{
 
 /* -------media query for mobile devices -------- */
 @media (min-width:200px) and (max-width: 723px){
+    html{
+        font-size: 14px;
+    }
      body{
         height: 100vh;
      }
-    nav{
-        border: 1px solid black;
-    }
+    
     nav>.left{
-        border: 1px solid black;
+
         justify-content: flex-start;
     }
     nav>.left>h1{
         padding-left: 0.3em;
-        padding-top: 0.1em;
+        padding-top: 0.4em;
+
     }
     nav>.right{
-        border: 1px solid black;
         justify-content: flex-end;
         padding-right: 0.5em;
     }
@@ -183,17 +186,43 @@ button:hover{
         flex-direction: column;
 
     }
-    .left,.right{
-        border: 1px solid black;
-    }
+    
     main>.left,.main>.right{
         width: 100%;
-        height: 50%;
     }
-    main>.inner,.h1,.h2,.p,button{
-        width: 90%;
+
+   
+   
+    .inner{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .inner>h1,h2{
+        max-width: 90%;
+        line-height: 1;
+        font-size: 2.5rem;
+        font-weight: 700
+    }
+    .inner>p{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    button{
+        width: 70%;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+        padding: 1em 0;
+        font-size: 1.2rem;
+    }
+    main>.right{
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
     }
     img{
-        overflow: hidden;
+        width: 70%;
+        display: block;
+        object-fit: cover;
+        
     }
 }
