@@ -7,6 +7,8 @@
 :root{
     --primary-color: #489fdc;
     --text-color: #343a3f;
+    --tablet-font-size: 14px;
+    --mobile-font-size: 14px;
 }
 body{
     height: 100vh;
@@ -66,7 +68,9 @@ li:hover{
     background-color: rgba(187, 187, 187, 0.5);
 }
 
-/* -----main section---- */
+/* main section */
+
+
 main{
     height: 92vh;
     width: 100%;
@@ -124,10 +128,12 @@ button:hover{
     font-weight: bolder;
 }
 
-/* -----media query for tablet ------ */
+/* media query for tablet */
+
+
 @media(min-width: 724px) and (max-width: 1024px){
     html{
-        font-size: 12px;
+        font-size: var(--tablet-font-size)
     }
     img{
         overflow: hidden;
@@ -154,11 +160,12 @@ button:hover{
         font-size: 1.2rem;
     }
 }
+/* media query for mobile */
 
-/* -------media query for mobile devices -------- */
+
 @media (min-width:200px) and (max-width: 723px){
     html{
-        font-size: 14px;
+        font-size: var(--mobile-font-size)
     }
      body{
         height: 100vh;
