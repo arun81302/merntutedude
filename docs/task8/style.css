@@ -67,8 +67,9 @@ li:hover{
 .right>p:hover{
     background-color: rgba(187, 187, 187, 0.5);
 }
-.icon,.mobiledevicemenu{
+.icon{
     display: none;
+    order: 999;
 }
 
 /* main section */
@@ -189,6 +190,9 @@ button:hover{
     nav>.mid{
         display: none;
     }
+    nav>button{
+        margin: 0;
+    }
     nav>.icon{
         display: flex;
         justify-content: center;
@@ -197,6 +201,7 @@ button:hover{
         width: 10%;
         font-size: 1.5rem;
         cursor: pointer;
+        background-color: transparent;
     }
     nav>.icon>img{
         width: 40%;
@@ -206,8 +211,8 @@ button:hover{
         position:absolute;
         right: 0;
         width: 60%;
-
         background-color: black;
+    
     }
     .mid>ul{
         flex-direction: column;
@@ -218,9 +223,10 @@ button:hover{
         font-size: 1.6rem;
         color: white;
     }
-
-   nav:focus-within .mid {
+   
+   button.icon:focus ~ .mid {
     display: block;
+    
 }
    
     main{
