@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>task12-js</h1>
+    <script>
+    
+let principal = 10000;   
+let rate = 5;          
+let time = 3;            
+let n = 1;              
+
+// Compound Interest Formula
+let amount = principal * Math.pow((1 + rate / (100 * n)), n * time);
+let compoundInterest = amount - principal;
+
+
+console.log("Amount:", amount.toFixed(2));
+console.log("Compound Interest:", compoundInterest.toFixed(2));
+    </script>
+</body>
+</html>
