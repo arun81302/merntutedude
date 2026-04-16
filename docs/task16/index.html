@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <navbar>
+    <nav class="navmain">
+        <navbar>
       <div class="navmenu">
         <h1>Hi, Username</h1>
         <button>Login</button>
@@ -16,11 +17,20 @@
     <search>
         <div class="searchcontainer">
             <div class="textinput">
-                <input type="text" placeholder="Search Student">
+                <input type="text" placeholder="Search Student" id="search">
                 <img src="icon.png" alt="">
             </div>
             <button>Search</button>
         </div>
     </search>
+    </nav>
+    
+
+    <div class="main">
+          <div class="container" id="cardContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
