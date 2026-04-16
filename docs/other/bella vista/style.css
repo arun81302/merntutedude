@@ -99,3 +99,9 @@ padding: 1em 2em;
     background-color: white;
     color: #2c3e50;
 }
+.section-title{
+    text-align: center;
+    margin: 2em 0;
+    font-size: 2rem;
+    color: #2c3e50;
+}
